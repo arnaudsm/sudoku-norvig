@@ -140,8 +140,8 @@ def solve_all(grilles, name='', showif=0.0):
     times, results = zip(*[time_solve(grille) for grille in grilles])
     N = len(grilles)
     if N > 1:
-        print "%d / %d puzzles %s resolus (moy. %.2f secs (%d Hz), max %.2f secs)." % (
-            sum(results), N, name, sum(times)/N, N/sum(times), max(times))
+        print "%d / %d puzzles %s resolus (total. %.2fs, moy. %.2f secs (%d Hz), max %.2f secs)." % (
+            sum(results), N, name,sum(times), sum(times)/N, N/sum(times), max(times))
 
 def solved(valeurs):
     "A puzzle is solved if each case is a permutation of the chiffres 1 to 9."
@@ -165,8 +165,3 @@ grille1  = '00302060090030500100180640000810290070000000800670820000260950080020
 grille2  = '4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......'
 hard1  = '.....6....59.....82....8....45........3........6..3.54...325..6..................'
     
-if __name__ == '__main__':
-    solve_all(from_file("data/Sudoku_Easy50.txt"), "easy50", None)
-    solve_all(from_file("data/Sudoku_top95.txt"), "top95", None)
-    solve_all(from_file("data/Sudoku_hardest.txt"), "hardest", None)
-    solve_all([random_puzzle() for _ in range(5)], "aleatoires", 0.01)
