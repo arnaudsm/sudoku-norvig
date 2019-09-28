@@ -5,7 +5,7 @@ Based on [Peter Norvig's article](https://norvig.com/sudoku.html).
 412 sudokus/sec on an `Intel i7-8750H` (single-threaded).
 
 # Dependencies
-- `Python 2.5+`
+- `Python 2.5+` (`Python 3.0+` is not supported)
 
 # Todo 
 - [ ] Port to IronPython
