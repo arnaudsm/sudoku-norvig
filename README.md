@@ -13,7 +13,3 @@ Based on [Peter Norvig's article](https://norvig.com/sudoku.html).
 - [ ] Translate all comments to French
 - [ ] Optimize even further ?
 - [ ] Multi-thread ?
-
-# Are you looking for a Data Scientist ? 
-- I'm looking for a **Master Internship** in **2020** in **North America** !
-- Please check out my [Resume.](https://arnaud.at/cv)
